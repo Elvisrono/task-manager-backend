@@ -9,7 +9,12 @@ class TasksController < ApplicationController
         tasks.create(
             category: params[:category],
             todos: params[:todos],
-            user_id: params[:id]
+            user_id: params[:id],
+            due_date: params[:due],
+            due: params[:datetime],
+            
+
+
         )
         tasks.to_json
     end
@@ -19,12 +24,13 @@ class TasksController < ApplicationController
         edit_task = tasks.find(params[:task_id])
         edit_task.update(
             category: params[:category],
-            todos: params[:todos]
+            todos: params[:todos],
+        
         )
         edit_task.to_json
     end
 
-    delete '/users/:id/task/:task_id' do
+    delete '/users/:id/tasks/:task_id' do
         tasks =  Task.where(user_id: params[:id])
         edit_task = tasks.find(params[:task_id])
         edit_task.destroy
