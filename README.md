@@ -17,5 +17,41 @@ You can use this API in conjunction with my front-end project management app see
 - DELETE task
 - UPDATE task
 
+ ## Installation
+
+To use this repo on your machine requires some simple steps
+
+- Open a terminal / command line interface on your computer
+- Clone the repo by using the following:
+
+        git clone https://https://github.com/kericho/my-app-frontend.git
+
+- Be patient as it creates a copy on your local machine for you.
+- Change directory to the repo folder:
+
+        cd task-manager-backend
+
+- (Optional) Open it in ``Visual Studio Code``
+
+        code .
+
+- (Alternate Option) Open it in any editor of your choice.
+
+-To install the necessary dependencies run:
+
+    bundle install
+
+-To create migrations with ActiveRecord, run:
+
+    bundle exec rake db:migrate
+
+-If you would like to use seed data, run:
+
+    bundle exec rake db:seed
+
+To start the server, run:
+
+    bundle exec rake server
+
 ## Author
 Elvis Rono
