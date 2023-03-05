@@ -11,6 +11,8 @@ user1 = User.create(username: 'tess', email: 'tess@gmail.com', password: '1234')
 ## creating a task
 Task.create(category: "work", todos: "finish up the project",  user_id: "user1.id")
 Task.create(category: "task1", todos: "clean the compound", user_id: "user2.id")
+Task.create(category: "task2", todos: "learn Algorithm", user_id: "user3.id")
+
 
 
 
