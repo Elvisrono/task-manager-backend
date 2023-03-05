@@ -1,5 +1,5 @@
 # task-manager-backend
-This project management API is a simple web API where you make CRUD calls to a server to organize task mangement app.
+This project task management app API is a simple web API where you make CRUD calls to a server to organize task mangement app.
 
 
 # Front-end Project Task Management Interface
