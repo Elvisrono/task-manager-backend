@@ -11,10 +11,6 @@ class TasksController < ApplicationController
             todos: params[:todos],
             user_id: params[:id],
             due_date: params[:due],
-            due: params[:datetime],
-            
-
-
         )
         tasks.to_json
     end
