@@ -19,6 +19,11 @@ You can use this API in conjunction with my front-end project management app see
  -Has many tasks
  -Has secure password
 
+ ## Delevarables
+ - As i user i can be able to register and login to the app
+ - As i user i can be able to create task
+ - AS i user i can be able to view task, delete task, and update task.
+
 
 
 ## The app CRUD calls
