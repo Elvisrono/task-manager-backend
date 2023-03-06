@@ -9,8 +9,8 @@ class Task < ActiveRecord::Base
             name: name,
             due_date: hash["due_date"],
             description: hash["description"],
-            status: status,
-            completed: completed
+            status: hash["status"],
+            completed: hash["not completed"]
         )
     end
 end
