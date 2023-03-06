@@ -1,61 +1,32 @@
+source "https://rubygems.org/"
 
+ruby File.read('.ruby-version').strip
 
-source "https://rubygems.org"
+gem 'sinatra', '~> 3.0', '>= 3.0.5'
 
-#ruby File.read('.ruby-version').strip
-# A DSL for quickly creating web applications
-# https://github.com/sinatra/sinatra
-gem "sinatra", "~> 2.1"
+gem 'sinatra-cross_origin', '~> 0.4.0'
 
-# A fast and simple web server
-# https://github.com/macournoyer/thin
-gem "thin", "~> 1.8"
+gem 'activerecord', '~> 7.0', '>= 7.0.4.2'
 
-# Rack middleware. Used specifically for parsing the request body into params.
-# https://github.com/rack/rack-contrib
-gem "rack-contrib", "~> 2.3"
+gem 'rake', '~> 13.0', '>= 13.0.6'
 
-# More Rack middleware! Used to handle CORS requests
-# https://github.com/cyu/rack-cors
-gem "rack-cors", "~> 1.1"
+gem 'sqlite3', '~> 1.6', '>= 1.6.1'
 
-# An object-relational mapper
-# https://guides.rubyonrails.org/active_record_basics.html
-gem "activerecord"
+gem 'sinatra-activerecord', '~> 2.0', '>= 2.0.26'
 
-# Configures common Rake tasks for working with Active Record
-# https://github.com/sinatra-activerecord/sinatra-activerecord
-gem "sinatra-activerecord"
+gem 'bcrypt', '~> 3.1', '>= 3.1.18'
 
-# Run common tasks from the command line
-# https://github.com/ruby/rake
-gem "rake", "~> 13.0"
+gem 'puma', '~> 6.1'
 
-# Provides functionality to interact with a SQLite3 database
-gem "sqlite3", "~> 1.4"
+gem 'require_all', '~> 3.0'
 
-# Require all files in a folder
-gem "require_all", "~> 3.0"
-
-# allows you to encrypt users password
-
-gem "bcrypt"
-gem "sinatra-flash"
-
-# These gems will only be used when we are running the application locally
 group :development do
-  gem "pry", "~> 0.14.1"
-  gem "faker", "~> 2.18"
-
-  # Automatically reload when there are changes
-  # https://github.com/alexch/rerun
-  gem "rerun"
+    gem 'rerun', '~> 0.14.0'
+    gem 'faker'
 end
 
-# These gems will only be used when we are running tests
 group :test do
-  gem "database_cleaner", "~> 2.0"
-  gem "rack-test", "~> 1.1"
-  gem "rspec", "~> 3.10"
-  gem "rspec-json_expectations", "~> 2.2"
+    gem 'rack-test', '~> 2.0', '>= 2.0.2'
+    gem 'rspec', '~> 3.12'
+    gem 'faker'
 end
