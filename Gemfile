@@ -1,4 +1,4 @@
-require 'sinatra/activerecord'
+
 
 source "https://rubygems.org"
 
