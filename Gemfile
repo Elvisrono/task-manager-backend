@@ -19,11 +19,11 @@ gem "rack-cors", "~> 1.1"
 
 # An object-relational mapper
 # https://guides.rubyonrails.org/active_record_basics.html
-gem "activerecord", "~> 6.1"
+gem "activerecord"
 
 # Configures common Rake tasks for working with Active Record
 # https://github.com/sinatra-activerecord/sinatra-activerecord
-gem "sinatra-activerecord", "~> 2.0"
+gem "sinatra-activerecord"
 
 # Run common tasks from the command line
 # https://github.com/ruby/rake
