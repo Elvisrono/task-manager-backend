@@ -11,6 +11,16 @@ You can use this API in conjunction with my front-end project management app see
 - SQLite3
 - Rack
 
+## Relationship with Database
++ task
+ -Belong to a user
+
++ user
+ -Has many tasks
+ -Has secure password
+
+
+
 ## The app CRUD calls
 - CREATE task
 - GET tasks
