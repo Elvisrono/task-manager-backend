@@ -10,15 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_03_02_094207) do
-
+ActiveRecord::Schema[7.0].define(version: 2023_03_02_094207) do
   create_table "tasks", force: :cascade do |t|
     t.string "category"
     t.string "todos"
     t.integer "user_id"
-    t.datetime "due"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "due", precision: nil
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.date "due_date"
   end
 
