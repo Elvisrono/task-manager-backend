@@ -94,7 +94,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  activerecord (~> 6.1)
+  activerecord
   bcrypt
   database_cleaner (~> 2.0)
   faker (~> 2.18)
@@ -108,7 +108,7 @@ DEPENDENCIES
   rspec (~> 3.10)
   rspec-json_expectations (~> 2.2)
   sinatra (~> 2.1)
-  sinatra-activerecord (~> 2.0)
+  sinatra-activerecord
   sinatra-flash
   sqlite3 (~> 1.4)
   thin (~> 1.8)
